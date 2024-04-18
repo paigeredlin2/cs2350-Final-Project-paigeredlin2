@@ -1,0 +1,122 @@
+/* Your styles go here */
+@import url("bootstrap/dist/css/bootstrap.min.css");
+@import url("bootstrap-icons/font/bootstrap-icons.css");
+
+/* Nav Styles */
+nav {
+    background-color: rgb(184, 173, 151);
+    padding: 0 0;
+}
+
+.nav-link {
+    display: block;
+    text-align: center;
+    color: black;
+    font-family: acme;
+    width: 100%;
+}
+
+.nav-link:hover {
+    background-color: rgb(166, 156, 136);
+}
+
+body {
+    background-image: url("https://images.unsplash.com/photo-1605731414532-6b26976cc153?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MTd8ZzdJT1hNaGxRSE18fGVufDB8fHx8fA%3D%3D");
+}
+
+#purchase-items {
+    padding: 2em 1em;
+    background-color: black;
+}
+
+#purchase-items h1 {
+    font-family: acme;
+    text-align: center;
+    color: rgb(248, 196, 9);
+    padding-bottom: 1em;
+}
+
+.button-view-cart {
+    width: 79%;
+    margin: 2em auto;
+}
+
+.button-view-cart button {
+    width: 100%;
+    font-family: acme;
+}
+
+.cards {
+    width: 80%;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.card {
+    flex: 1;
+    border: 2px solid black;
+    margin: 0 .2em;
+    border-radius: 5px;
+    background-color: rgb(166, 156, 136);
+}
+
+.card img {
+    height: 100%;
+}
+
+.card-body {
+    height: 35%;
+    font-family: acme;
+    font-size: larger;
+}
+
+#cart {
+    background-color: rgb(166, 156, 136);
+    padding: 2em;
+    font-family: acme;
+}
+
+#cart h1 {
+    text-align: center;
+}
+
+.cart-item-card {
+    border: 1px solid black;
+    margin-bottom: .5em;
+}
+
+.cart-item-card .product-image {
+    flex: 1;
+}
+
+.cart-item-card .product-image img {
+    width: 100%;
+}
+
+.cart-item-card .product-body {
+    margin: 1em;
+    flex: 3;
+}
+
+.cart-item-card .product-body-upper {
+    flex: 1;
+}
+
+.button-view-merch {
+    width: 79%;
+    margin: 2em auto;
+}
+
+.button-view-merch button {
+    width: 100%;
+    font-family: acme;
+}
+
+footer {
+    height: 10vh;
+    background-color: black;
+    color: rgb(184, 173, 151);
+    text-align: center;
+    padding: 1.3em;
+    font-family: acme;
+}

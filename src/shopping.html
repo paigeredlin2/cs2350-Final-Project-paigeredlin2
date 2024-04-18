@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Sunset Rendevous</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="index,follow" />
+  <meta name="description" content="TODO: A starter project for ..." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="./stylesheets/shopping.css" />
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg ">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav d-flex justify-content-between w-100">
+          <a class="nav-link" href="index.html">Home</a>
+          <a class="nav-link" href="about.html">About</a>
+          <a class="nav-link" href="tours.html">Touring</a>
+          <a class="nav-link" href="blog.html">Blog</a>
+          <a class="nav-link" href="shopping.html"><i class="bi bi-bag-fill"></i></a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="container" id="purchase-items">
+    <h1>Our Merch</h1>
+    <div class="cards d-flex flex-column flex-lg-row">
+
+      <div class="card card-1">
+        <img class="card-img-top"
+          src="https://images.unsplash.com/photo-1606115757624-6b9bfe9fa5e4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8NXxnN0lPWE1obFFITXx8ZW58MHx8fHx8"
+          alt="T-shirt and Beanie with our band name centered">
+        <div class="card-body">
+          <h5 class="card-title">T-shirt plus Beanie</h5>
+          <p class="card-text">Black t-shirt AND a black beanie with our band name centered.</p>
+          <p class="price">$44.99</p>
+          <h3 href="#" class="btn btn-primary add-to-cart">Add to cart</h3>
+        </div>
+      </div>
+
+      <div class="card card-2">
+        <img class="card-img-top"
+          src="https://images.unsplash.com/photo-1576525865260-9f0e7cfb02b3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXxnN0lPWE1obFFITXx8ZW58MHx8fHx8"
+          alt="Our first album on a vinyl record">
+        <div class="card-body">
+          <h5 class="card-title">Sunset Rendevous 1 on viynl</h5>
+          <p class="card-text">Our first album 'Never Let Go' on a vinyl record</p>
+          <p class="price">$34.99</p>
+          <h3 href="#" class="btn btn-primary add-to-cart">Add to cart</h3>
+        </div>
+      </div>
+
+      <div class="card card-3">
+        <img class="card-img-top"
+          src="https://images.unsplash.com/photo-1647604467065-141a40de4eef?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8NHxnN0lPWE1obFFITXx8ZW58MHx8fHx8"
+          alt="Our first album on a cd disc">
+        <div class="card-body">
+          <h5 class="card-title">Sunset Rendevous 1 on disc</h5>
+          <p class="card-text">Our first album 'Never Let Go' on a cd disc</p>
+          <p class="price">$12.99</p>
+          <h3 href="#" class="btn btn-primary add-to-cart">Add to cart</h3>
+        </div>
+      </div>
+    </div>
+    <div class="button-view-cart">
+      <button class="btn btn-primary" id="hide-merch">View your cart</button>
+    </div>
+
+  </div>
+  <div class="container d-none" id="cart">
+    <h1><i class="bi bi-cart"></i></h1>
+    <div class="in-cart">
+    </div>
+    <div class="d-flex flex-column" id="cart-item">
+    </div>
+    <div class="button-view-merch">
+      <button class="btn btn-primary" id="hide-cart">Go back to merchandise</button>
+    </div>
+
+    <div class="order-form">
+      <form>
+
+        <div class="row">
+          <div class="col">
+            <label for="inputEmail4">First Name</label>
+            <input type="text" class="form-control" placeholder="First name">
+          </div>
+          <div class="col">
+            <label for="inputEmail4">Last name</label>
+            <input type="text" class="form-control" placeholder="Last name">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="form-group ">
+            <label for="inputEmail4">Email</label>
+            <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+          </div>
+
+        </div>
+        <div class="form-group">
+          <label for="inputAddress">Address</label>
+          <input type="text" class="form-control" id="inputAddress" placeholder="">
+        </div>
+        <div class="form-group">
+          <label for="inputAddress2">Address 2</label>
+          <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+        </div>
+        <div class="row">
+          <div class="form-group col-md-6">
+            <label for="inputCity">City</label>
+            <input type="text" class="form-control" id="inputCity">
+          </div>
+          <div class="form-group col-md-4">
+            <label for="inputState">State</label>
+            <select id="inputState" class="form-control">
+              <option selected>Choose...</option>
+              <option>...</option>
+            </select>
+          </div>
+          <div class="form-group col-md-2">
+            <label for="inputZip">Zip</label>
+            <input type="text" class="form-control" id="inputZip">
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+              Check me out
+            </label>
+          </div>
+        </div>
+        <button type="submit" id="submit-btn" class="btn btn-primary">Submit my order</button>
+        <button type="button" class="btn btn-danger">Cancel</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <span>&copy; 2024 All rights reserved - Paige Redlin</span>
+  </footer>
+  <script type="module" src="./javascripts/main.js"></script>
+</body>
+
+</html>

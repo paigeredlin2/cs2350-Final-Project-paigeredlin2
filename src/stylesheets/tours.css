@@ -1,0 +1,92 @@
+/* Your styles go here */
+@import url("bootstrap/dist/css/bootstrap.min.css");
+@import url("bootstrap-icons/font/bootstrap-icons.css");
+
+/* Nav Styles */
+nav {
+    background-color: rgb(184, 173, 151);
+    padding: 0 0;
+}
+
+.nav-link {
+    display: block;
+    text-align: center;
+    color: black;
+    font-family: acme;
+    width: 100%;
+}
+
+.nav-link:hover {
+    background-color: rgb(166, 156, 136);
+}
+
+header {
+    color: rgb(248, 196, 9);
+    font-family: acme;
+    padding: 4em;
+    text-align: center;
+
+}
+
+header h1 {
+    font-size: 7vw;
+}
+
+body {
+    background-color: black;
+}
+
+section {
+    background-image: url("https://images.unsplash.com/photo-1573566472937-1fa7a6230e93?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MnxnN0lPWE1obFFITXx8ZW58MHx8fHx8");
+    padding: 2em;
+    width: 85%;
+    margin: 0 auto;
+}
+
+.tour-para {
+    background-color: black;
+    padding: 2em;
+}
+
+.tour-para .show {
+    border: 1px solid rgb(248, 196, 9);
+    padding: 1em;
+}
+
+.tour-para p {
+    text-align: center;
+    color: rgb(186, 201, 232);
+    font-family: acme;
+    font-size: 4vw;
+    margin: 0;
+}
+
+.tour-table {
+    color: rgb(166, 156, 136);
+    font-size: 2em;
+}
+
+.tour-table table {
+    width: 100%;
+    border: 1px solid rgb(248, 196, 9);
+}
+
+.tour-table table th,
+.tour-table table td {
+    border: 1px solid rgb(186, 201, 232);
+    border-collapse: collapse;
+    padding: .5em;
+    font-family: acme;
+    background-color: black;
+    text-align: center;
+}
+
+footer {
+    height: 10vh;
+    background-color: black;
+    color: rgb(166, 156, 136);
+    text-align: center;
+    padding: 1.3em;
+    font-family: acme;
+
+}

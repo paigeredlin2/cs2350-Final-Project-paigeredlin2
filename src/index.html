@@ -1,27 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Project Starter</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="robots" content="index,follow" />
-    <meta name="description" content="TODO: A starter project for ..." />
 
-    <link rel="stylesheet" href="./stylesheets/main.css" />
-  </head>
+<head>
+  <meta charset="utf-8" />
+  <title>Sunset Rendevous</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="index,follow" />
+  <meta name="description" content="TODO: A starter project for ..." />
 
-  <body>
-    <!-- Your HTML goes here -->
-    <h1 class="display-2 text-center my-5 py-5">
-      <span class="d-block py-5">
-        <i class="bi bi-filetype-html text-primary"></i>
-        <i class="bi bi-filetype-css text-danger"></i>
-        <i class="bi bi-filetype-js text-success"></i>
-      </span>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
 
-      Welcome to CS 2350!
-    </h1>
 
-    <script type="module" src="./javascripts/main.js"></script>
-  </body>
+  <link rel="stylesheet" href="./stylesheets/main.css" />
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg ">
+    <div class="container">
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav d-flex justify-content-between w-100">
+          <a class="nav-link" href="index.html">Home</a>
+          <a class="nav-link" href="about.html">About</a>
+          <a class="nav-link" href="tours.html">Touring</a>
+          <a class="nav-link" href="blog.html">Blog</a>
+          <a class="nav-link" href="shopping.html"><i class="bi bi-bag-fill"></i></a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header / Jumbotron -->
+  <header class="jumbotron">
+    <div class="container jumbotron-text">
+      <h1>SUNSET RENDEVOUS</h1>
+      <h3>Now on tour for our first album</h3>
+      <button><a href="tours.html">View the schedule</a></button>
+    </div>
+  </header>
+
+  <section>
+    <div class="container music-video ">
+      <h3>Won't you stay a while and listen to our album?</h3>
+      <div class="spotify d-sm-block d-md-none text-center">
+
+        <a href="https://open.spotify.com/search/tame%20impala"><i class="bi bi-spotify"></i></a>
+      </div>
+      <div class="video ratio ratio-16x9 d-none d-md-block">
+        <iframe class="iframe"
+          src="https://www.youtube.com/embed/_b7jUVyOuDU?si=C951EykZAtNe45Za&amp;controls=0?controls=0;modestbranding=1"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <span>&copy; 2024 All rights reserved - Paige Redlin</span>
+  </footer>
+  <script type="module" src="./javascripts/main.js"></script>
+</body>
+
 </html>
